@@ -1,0 +1,181 @@
+body {
+    color: white;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+  }
+
+#half {
+  font-family: 'Raleway', sans-serif;
+}
+
+.row {
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.sleep {
+    height: 25vh;
+    background-color: #ff4d00;
+    position: relative;
+  }
+  .sleep h1 {
+    font-size: 4rem ;
+    color:#FF7D6C;
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+  }
+.sleep:hover {
+  background-image: url(img/orange-bedroom3.jpg);
+  background-size: cover;
+  background-position: 50%;
+}
+/* .sleep:hover > #sleeptext {
+    font-size: 12vw;;
+  }   */
+.train {
+    height: 45vh;
+    background-color: #090081;
+    position: relative;
+  }
+  .train h1 {
+      font-size: 4rem ;
+      color:#ff4d00;
+      position: absolute;
+      top: 0px;
+      right: 10px;
+      display: inline;
+    }
+.train:hover {
+  background-image: url(img/gym.jpg);
+  background-size: cover;
+}
+
+/* .train:hover > #traintext {
+    font-size: 12vw;
+ } */
+.eat {
+    height: 45vh;
+    background-color: #795CA8;
+    position: relative;
+  }
+.eat:hover {
+  background-image: url(bambini2mobile.jpg);
+  background-size: cover;
+}
+  .eat h1 {
+    font-size: 4rem ;
+    color:#DEDE00;
+    writing-mode: vertical-rl;
+    text-orientation:sideways-right;
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+    margin: 0;
+    display: inline;
+  }
+/* .eat:hover > #eattext {
+  font-size: 12vw;
+ } */
+.relax {
+    height: 70vh;
+    background-color: #eb7666;
+    position: relative;
+  }
+  .relax h1 {
+    font-size: 4rem ;
+    color:#E8B8CE;
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+  }
+.relax:hover > #relaxtext {
+  font-size: 12vw;
+  }
+.pigment {
+    text-align: center;
+    height: 30vh;
+    background-color: #E8B8CE;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    padding-block: 0;
+    padding-inline: 0;
+    position: relative;
+  }
+.pigment h1 {
+  font-family: 'Passions Conflict', cursive;
+  font-weight: lighter;
+  font-size: 12rem;
+  white-space: nowrap;
+  color: #090081;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+footer {
+  /* height: 530px; */
+  background-color: #E8B8CE;
+  font-family: 'Raleway', sans-serif;
+  color:#090081;
+}
+footer h2 {
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+footer h3{
+  font-size: 13px;
+}
+footer a {
+  color: #090081;
+}
+.hotelimage {
+  /* width: 25vw; */
+  width: 250px;
+  height: auto;
+  margin-bottom: 50px;
+}
+.pigmenthotel2024 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+}
+
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+  .pigment h1 {
+    font-size: 10rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+    /* body {
+      overflow:auto ;
+    } */
+    .sleep {
+        height: 25vh;
+      }
+    .train {
+        width: 50vw;
+        height: 25vh;
+      }
+    .eat {
+        width: 50vw;
+        height: 25vh;
+      }
+    .relax {
+        height: 25vh;
+      }
+    .pigment {
+        height: 25vh;
+      }
+    .pigment h1 {
+      font-size: 7rem;
+    }
+}
