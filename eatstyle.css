@@ -273,7 +273,7 @@ padding-bottom: 3rem;
   list-style-position: inside;
 }
 
-.story img {
+.story img:not(.photos img){
   width: 100%;
   height: auto;
   position: relative;
@@ -302,7 +302,7 @@ padding-bottom: 3rem;
   left:0;
   right: 0;
   position: relative;
-  
+  display: inline;
 }
 
 .ingredients {
@@ -366,7 +366,7 @@ footer a {
   object-fit: cover;
 }
   
-.story div {
+.story div:not(.photos) {
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -376,5 +376,10 @@ footer a {
 @media screen and (min-width:576px) and (max-width: 992px) {
   .home, .sleep, .train, .eat, .relax {
     width: 16vw;
+  }
+
+  .story div:not(.photos) {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   }
