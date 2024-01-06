@@ -226,12 +226,10 @@ z-index: 100;
   z-index: 204;
 }
 
-.story div:not(.photos) {
-  padding: 1rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  padding-left: 40px;
-  padding-right: 40px;
+
+.story div:not(#photos, .dessert) {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .story h2 {
@@ -246,8 +244,8 @@ z-index: 100;
   letter-spacing: 0.08rem;
   text-align: justify;
   padding-bottom: 2rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 5rem;
+  padding-right: 3rem;
 }
 
 .texthalf {
@@ -256,7 +254,6 @@ z-index: 100;
 
 .storytext {
 position: inherit;
-padding: 10vw;
 top: 50%;
 transform: translateY(-50%);
 /* border: 4px;
@@ -271,38 +268,41 @@ padding-bottom: 3rem;
 .story ul {
   text-align: left;
   list-style-position: inside;
+  padding-left: 5rem;
 }
 
-.story img:not(.photos img){
+.story img:not(.dessert img){
   width: 100%;
   height: auto;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  padding-left: 5rem;
+  padding-right: 3rem;
 }
 
 .cuisine {
   background-color: #795CA8;
   color: #E8B8CE;
 }
+
+.storypadding {
+  padding-left: 120px;
+  padding-right: 120px;
+}
 .cuisine h2 {
   color:#DEDE00;
 }
 
-.photos {
+.photos div {
   margin: 0;
   padding: 0;
 }
 
-.photos img {
-  width: 50vw;
+.photos img{
+  width: 100%;
   height: auto;
-  margin: 0;
-  padding: 0;
-  left:0;
-  right: 0;
-  position: relative;
-  display: inline;
+  object-fit: cover;
 }
 
 .ingredients {
@@ -366,9 +366,26 @@ footer a {
   object-fit: cover;
 }
   
-.story div:not(.photos) {
-  padding-left: 20px;
-  padding-right: 20px;
+.story div:not(#photos, .dessert) {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+}
+
+.photos div {
+  margin: 0;
+  padding: 0;
+}
+
+.story p {
+  padding: 0;
+}
+.story h2{
+  padding-top: 3rem;
+}
+.story img:not(.dessert img) {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 }
@@ -378,8 +395,25 @@ footer a {
     width: 16vw;
   }
 
-  .story div:not(.photos) {
+  .story div:not(#photos, .dessert){
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .photos div {
+    margin: 0;
+    padding: 0;
   }
+
+  .photos img {
+    width: 50vw;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .story img:not(.dessert img) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  }
+
