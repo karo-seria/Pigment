@@ -92,8 +92,9 @@ body {
     bottom: -10px;
     right: 10px;
   }
-.relax:hover > #relaxtext {
-  font-size: 12vw;
+.relax:hover {
+  background-image: url(home.jpg);
+  background-size: cover;
   }
 .pigment {
     text-align: center;
