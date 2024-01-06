@@ -33,9 +33,6 @@ body {
   background-size: cover;
   background-position: 50%;
 }
-/* .sleep:hover > #sleeptext {
-    font-size: 12vw;;
-  }   */
 .train {
     height: 45vh;
     background-color: #090081;
@@ -50,22 +47,16 @@ body {
       display: inline;
     }
 .train:hover {
-  background-image: url(img/gym.jpg);
+  background-image: url(img/hermesgym2.jpg);
   background-size: cover;
+  background-position: 50%;
 }
 
-/* .train:hover > #traintext {
-    font-size: 12vw;
- } */
 .eat {
     height: 45vh;
     background-color: #795CA8;
     position: relative;
   }
-.eat:hover {
-  background-image: url(bambini2mobile.jpg);
-  background-size: cover;
-}
   .eat h1 {
     font-size: 4rem ;
     color:#DEDE00;
@@ -77,9 +68,11 @@ body {
     margin: 0;
     display: inline;
   }
-/* .eat:hover > #eattext {
-  font-size: 12vw;
- } */
+  .eat:hover {
+    background-image: url(bambini2mobile.jpg);
+    background-size: cover;
+  }
+
 .relax {
     height: 70vh;
     background-color: #eb7666;
