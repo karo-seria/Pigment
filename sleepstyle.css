@@ -1,0 +1,432 @@
+body {
+  background-color:#E8B8CE;
+  margin-top: 0;
+  top: 0;
+  padding-top: 0;
+  overflow-x: hidden;
+}
+
+.container {
+font-family: 'Raleway', sans-serif;
+margin-top: 0;
+top: 0;
+padding-top: 0;
+display: flex;
+justify-content: center;
+position: sticky;
+z-index: 200;
+}
+
+.nav {
+display: flex;
+margin-top: 0;
+flex-wrap: nowrap;
+}
+.home {
+height: 30px;
+width: 10vw;
+background-color:#E8B8CE;
+position: relative;
+}
+.home h1 {
+font-size: 1rem ;
+letter-spacing: 0.1rem;
+font-weight: 400;
+color:#090081;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -55%);
+}
+.sleep {
+  height: 30px;
+  width: 10vw;
+  background-color: #ff4d00;
+  position: relative;
+}
+.sleep h1 {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  color:#ffbcb4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+.train {
+  height: 30px;
+  letter-spacing: 0.1rem;
+  width: 10vw;
+  background-color: #090081;
+  position: relative;
+}
+.train h1 {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  color:#ff4d00;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  }
+.eat {
+  height: 30px;
+  width: 10vw;
+  background-color: #795CA8;
+  position: relative;
+}
+.eat h1 {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  color:#DEDE00;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+.relax {
+  height: 30px;
+  width: 10vw;
+  background-color: #ff6c85;
+  position: relative;
+}
+.relax h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  color:#e9d2dd;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+
+.header {
+position: relative;
+top: -50px;
+/* margin-bottom: -50px; */
+}
+.header img {
+left: 0;
+right: 0;
+bottom: 0;
+width: 100vw;
+height: auto;
+margin-top: 0;
+max-width: 100%;
+border-style: none;
+/* padding: 5vw; */
+}
+.headerph {
+font-family: 'Passions Conflict', cursive;
+/* font-weight: lighter; */
+font-size: 3rem;
+font-weight:400;
+color:#090081;
+position: fixed;
+top: 40px;
+left: 50%;
+transform: translateX(-50%);
+white-space: nowrap;
+z-index: 99;
+}
+.headersleep {
+font-family: 'Passions Conflict', cursive;
+/* font-weight: bold; */
+font-size: 30vw;
+color:#ff4d00;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 100;
+}
+.credit {
+  position: relative;
+  top: -50px;
+  margin-bottom: -50px;
+  color:#E8B8CE;
+  font-family: 'raleway', sans-serif;
+  font-size: 13px;
+  text-decoration: none;
+  float: right !important;
+  right: 8%;
+}
+
+/* BOOK LINK CIRCLE */
+
+:root {
+--radius: 60px;
+--frame-size: calc(var(--radius) / 3);
+--d-outer: calc(var(--radius) * 2);
+--d-inner: calc(var(--d-outer) - var(--frame-size));
+}
+
+.circle {
+position: fixed;
+width: var(--d-outer);
+height: var(--d-outer);
+border-radius: 50%;
+display:flex;
+font-family: 'Raleway', sans-serif;
+font-size: 1rem;
+text-transform: uppercase;
+top: 50%;
+right: 80px;    
+transform: translateY(-50%);
+z-index: 205;
+/* mix-blend-mode:difference; */
+}
+
+.circle a {
+color:#ff6c85;
+}
+
+.book {
+position: relative;
+height: var(--d-outer);
+width: var(--d-outer);
+top: 50%;
+left: 50%;
+transform: translateY(4%);
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+}
+.text {
+position:relative;
+width: 100%;
+height: 100%;
+animation: rotateText 20s linear infinite;
+letter-spacing: 1rem;
+}
+@keyframes rotateText {
+0% {
+transform: rotate(360deg);
+}
+100% {
+transform: rotate(0deg);
+}
+}
+.text p span {
+position: absolute;
+left: 50%;
+font-size: 0.7rem;
+letter-spacing: 1rem;
+transform-origin: 0 var(--radius);
+}
+
+.circle:hover .text {
+scale: 1.1;
+}
+
+/* BOOK LINK CIRCLE END */
+
+.travelawards img {
+height: 17%;
+width: auto;
+position: fixed;
+top: 90%;
+left: 10px;    
+transform: translateY(-50%);
+padding: 0;
+/* transform: translate(-50%, -50%); */
+/* float: right; */
+z-index: 204;
+}
+
+
+.story div:not(#photos, .dessert) {
+padding-top: 2rem;
+padding-bottom: 2rem;
+}
+
+.story h2 {
+font-family: 'Passions Conflict', cursive;
+font-size: 6rem;
+white-space: nowrap;
+/* font-family: 'raleway', sans-serif; */
+padding-bottom: 3rem;
+}
+
+.story p {
+font-family: 'raleway', sans-serif;
+font-size: 0.8rem;
+letter-spacing: 0.08rem;
+text-align: justify;
+padding-bottom: 2rem;
+padding-left: 5rem;
+padding-right: 3rem;
+}
+
+.texthalf {
+position: relative;
+}
+
+.storytext {
+position: inherit;
+top: 50%;
+transform: translateY(-50%);
+}
+
+.story ul {
+text-align: left;
+list-style-position: inside;
+padding-left: 5rem;
+}
+
+.story img:not(.dessert img){
+width: 100%;
+height: auto;
+position: relative;
+top: 50%;
+transform: translateY(-50%);
+padding-left: 5rem;
+padding-right: 3rem;
+}
+
+.cuisine {
+background-color:#E8B8CE;
+color:#795CA8;
+}
+
+.storypadding {
+padding-left: 120px;
+padding-right: 120px;
+}
+.cuisine h2 {
+color:#795CA8;
+}
+
+.photos div {
+margin: 0;
+padding: 0;
+}
+
+.photos img{
+width: 100%;
+height: auto;
+object-fit: cover;
+}
+
+.ingredients {
+background-color:#ffb697;
+color:#ff4d00;
+}
+
+.dessert {
+background-color:#090081;
+color: #E8B8CE;
+}
+.dessert h2 {
+color:#DEDE00;
+}
+
+.interior img {
+width: 100vw;
+padding: 0;
+margin: 0;
+}
+
+footer {
+/* height: 530px; */
+background-color: #E8B8CE;
+font-family: 'Raleway', sans-serif;
+color:#090081;
+padding: 0;
+margin: 0;
+}
+footer h2 {
+font-size: 20px;
+margin-top: 50px;
+margin-bottom: 40px;
+}
+footer h3{
+font-size: 13px;
+}
+footer a {
+color: #090081;
+}
+
+.hotelimage {
+/* width: 25vw; */
+width: 250px;
+height: auto;
+margin-bottom: 50px;
+}
+
+
+
+@media screen and (max-width: 576px) {
+.home, .sleep, .train, .eat, .relax {
+width: 20vw;
+}
+.story img {
+width: 100%;
+height: auto;
+}
+.interior img {
+height: 100%;
+object-fit: cover;
+}
+
+.story h2 {
+  font-size: 5.5rem;
+}
+.story div:not(#photos, .dessert) {
+padding-left: 10px;
+padding-right: 10px;
+padding-top: 0;
+}
+
+.photos div {
+margin: 0;
+padding: 0;
+}
+
+.story p {
+padding: 0;
+}
+.story h2{
+padding-top: 3rem;
+}
+.story img:not(.dessert img) {
+padding-left: 0;
+padding-right: 0;
+}
+
+}
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+.home, .sleep, .train, .eat, .relax {
+  width: 16vw;
+}
+.story h2 {
+  font-size: 7rem;
+}
+.story div:not(#photos, .dessert){
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.photos div {
+  margin: 0;
+  padding: 0;
+}
+
+.photos img {
+  width: 50vw;
+  height: auto;
+  object-fit: cover;
+}
+
+.story img:not(.dessert img) {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+}
+
