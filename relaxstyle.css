@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: "Great Vibes", sans-serif;*/
+    
+}
+
+.container {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    top: 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    z-index: 200;
+    
+  }
+  
+.nav {
+    display: flex;
+    margin-top: 0;
+    flex-wrap: nowrap;
+    position:absolute;
+    top: 0;
+    
+}
+.home {
+    height: 30px;
+    width: 10vw;
+    background-color:#E8B8CE;
+    position: relative;
+}
+.home h1 {
+    font-size: 1rem ;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    color:#090081;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+.sleep {
+      height: 30px;
+      width: 10vw;
+      background-color: #ff4d00;
+      position: relative;
+}
+.sleep h1 {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      font-weight: 400;
+      color:#ffbcb4;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+}
+.train {
+      height: 30px;
+      letter-spacing: 0.1rem;
+      width: 10vw;
+      background-color: #090081;
+      position: relative;
+}
+.train h1 {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      font-weight: 400;
+      color:#ff4d00;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+}
+.eat {
+      height: 30px;
+      width: 10vw;
+      background-color: #795CA8;
+      position: relative;
+}
+.eat h1 {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      font-weight: 400;
+      color:#DEDE00;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+}
+.relax {
+      height: 30px;
+      width: 10vw;
+      background-color: #ff6c85;
+      position: relative;
+}
+.relax h1 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      font-weight: 400;
+      color:#e9d2dd;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+}
+  
+
+section{
+    height: 100vh;
+    display: flex;
+    /*justify-content:center;*/
+    /*align-items: center;*/
+
+}
+
+/*.relax{
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
+    height: 100vh;
+}*/
+/*SECTION 1 PAGE*/
+.one{
+    background-image: url(/relaximage/header.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.background-text{
+    position: relative;
+    font-size: 90px;
+    top: 50%;
+    font-family: "Great Vibes",sans-serif;
+}
+
+.overlay-text{
+    position: absolute;
+    /*top: 73%*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Great Vibes",sans-serif;
+    color: #ff0000;
+    font-size: 100px;
+}
+
+.sub-title{
+    position: relative;
+    text-align: center;
+    font-family: "Great Vibes",sans-serif;
+    font-size: 35px;
+    top: 5%;
+    left: 49%;
+    
+    
+}
+
+/*SECTION 2 - ABOUT*/
+.about{
+    background-color: rgb(255, 125, 108);
+    position: relative;
+    
+}
+
+.about p{
+    z-index: 0; /* Ensure the paragraph is below the subtitle */
+    top: 15%;
+    left: -2%;
+    position: relative;
+    font-size: 25px;
+}
+
+/*SECTION 3 - GALLERY*/
+.gallery{
+    background-color: white;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container{
+    position: relative;
+    max-width: 80%;
+    text-align: center;
+    left: -5%;
+}
+
+/* Hides the images by default */
+.mySlides {
+    display: none;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+/*  pointer that hovers over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+img {
+    vertical-align: middle;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+
+   position: absolute;
+    top: 0;
+}
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+  /* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+  
+  /* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+  
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/*SECTION 4 - Our services*/
+.menu{
+    background-color: rgb(255, 125, 108);
+}
+
+#mysidemenu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 30%;
+}
+#mysidemenu a {
+    position: relative;
+    left: -155px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+
+}
+
+#mysidemenu a:hover{
+    left: 0;
+    background-color: #555;
+}
+.menu-content p {
+    margin: 0;
+}
+.content-container {
+    margin-left: 120px; /* Adjust this margin to match the width of your side menu */
+    padding: 20px;
+}
+
+.menu-content {
+    position: relative;
+    left: 50%;
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    top: 30%;
+}
+
+.menu-content h2 {
+    margin-bottom: 10px;
+}
+
+.price{
+    float: right;
+    color: red;
+}
+
+#face{
+    background-color: #04AA6D;
+    
+}
+
+#body{
+    background-color: #2196f3;
+}
+
+#massage{
+    background-color: #f44336;
+}
+
+/*SECTION 5 - reviews*/
+
+*:before, *:after {
+    box-sizing: inherit;
+}
+/*.review{
+    
+}*/
+.avatar{
+    vertical-align:middle;  
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+  
+.column2 {
+    margin-top: 15%;
+    position: relative;
+    float: left;
+    left: -3%;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    
+}
+  
+@media screen and (max-width: 650px) {
+    .column2 {
+      width: 100%;
+      display: block;
+    }
+}
+
+.checked{
+    color: orange;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+  
+.container2 {
+    padding: 0 16px;
+}
+  
+.container2::after, .row2::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+.title {
+    color: grey;
+}
+
+
+/*section 6*/
+.six{
+    background-image: url(/relaximage/footer.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+
+}
+/*contact page*/
+.contact{
+    background-color:rgb(232, 184, 206);
+}
+
+.contact .row{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact .left{
+   flex: 1;
+   padding: 20px;
+   margin-top: 0;
+
+}
+
+.contact .right{
+    flex: 1;
+    padding: 20px;
+    margin-top: 0;
+    text-align: center;
+}
+.bi {
+    position: relative;
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+.bi:hover {
+      opacity: 0.7;
+}
+.bi-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+
+.bi-instagram {
+    background: #125688;
+    color: white;
+}
+
+footer{
+    
+    height: 3vh;
+    display: flex;
+    background-color: rgb(132, 47, 185);
+    color: white;
+}
