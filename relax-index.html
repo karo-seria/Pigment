@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel ="stylesheet" href="/relax-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <title>Relax</title>
+</head>
+<body>
+    <script src="/relax-script.js"></script>
+    <div class="relax">
+
+        <section class="one">
+           <div class="background-text">
+            Pigment Hotel
+            <div class="overlay-text">Relax</div>
+           </div>
+        </section>
+
+        <section class="about">
+            <div class="sub-title">About</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nullam risus dui, pulvinar sit amet tincidunt vel, semper
+                tincidunt eros. Vestibulum pharetra, nunc nec fringilla rhoncus,
+                urna sem iaculis dui, non commodo justo neque eu orci. Mauris viverra 
+                ullamcorper elit, at consectetur tellus ullamcorper vitae.
+                Nam vitae convallis libero. Fusce scelerisque dolor posuere mi cursus 
+                laoreet. Quisque viverra turpis sit amet tincidunt consequat.
+                Vestibulum ante ipsum primis in faucibus orci luctus et u.<br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Nullam risus dui, pulvinar sit amet tincidunt vel, semper
+                tincidunt eros. Vestibulum pharetra, nunc nec fringilla rhoncus,
+                urna sem iaculis dui, non commodo justo neque eu orci. Mauris viverra 
+                ullamcorper elit, at consectetur tellus ullamcorper vitae.
+                Nam vitae convallis libero. Fusce scelerisque dolor posuere mi cursus 
+                laoreet. Quisque viverra turpis sit amet tincidunt consequat.
+                Vestibulum ante ipsum primis in faucibus orci luctus et u.
+            </p>
+            
+        </section>
+
+        <section class="gallery">
+            <div class="sub-title">
+                Our Gallery
+            </div>
+            <div class="image-container">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 6</div>
+                        <img src="/image/1.jpg" style="width: 65%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 6</div>
+                        <img src="/image/2.png" style="width: 65%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 6</div>
+                        <img src="/image/3.jpg" style="width: 65%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 6</div>
+                        <img src="/image/4.jpg" style="width: 65%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">5 / 6</div>
+                        <img src="/image/5.jpg" style="width: 65%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">6 / 6</div>
+                        <img src="/image/6.webp" style="width: 65%">
+                </div>
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                    <img class="demo cursor" src="/image/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Pigment Hotel">
+                    </div>
+                    <div class="column">
+                    <img class="demo cursor" src="/image/2.png" style="width:108%" onclick="currentSlide(2)" alt="Pigment Hotel">
+                    </div>
+                    <div class="column">
+                    <img class="demo cursor" src="/image/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Pigment Hotel">
+                    </div>
+                    <div class="column">
+                    <img class="demo cursor" src="/image/4.jpg" style="width:110%" onclick="currentSlide(4)" alt="Pigment Hotel">
+                    </div>
+                    <div class="column">
+                    <img class="demo cursor" src="/image/5.jpg" style="width:118%" onclick="currentSlide(5)" alt="Pigment Hotel">
+                    </div>
+                    <div class="column">
+                    <img class="demo cursor" src="/image/6.webp" style="width:100%" onclick="currentSlide(6)" alt="Pigment Hotel">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="menu">
+            <div class="sub-title">
+                Our Services
+            </div>
+            <div id ="mysidemenu" class="sidemenu">
+                <a href="#face" id="face"  onclick="showContent('FaceContent')">Face</a>
+                <a href="#body" id="body" onclick="showContent('BodyContent')">Body</a>
+                <a href="#massage" id="massage" onclick="showContent('MassageContent')">Massage</a>
+            </div>
+            
+            <div class="content-container">
+                <div id="FaceContent" class="menu-content">
+                    <article class="order">
+                        <h2><b class="item">Essential Facial Treatment</b><span class="price">£90.00</span></h2>
+                    </article>
+                    <article class="order">
+                        <h2><b class="item"> & Mango Soothing Facial</b><span class="price">£100.00</span>
+                    </article>
+                    <article class="order">
+                        <h2><b class="item">Eucalyptus Clarifying Facial</b><span class="price">£100.00</span></h2>
+                    </article>
+                    <article class="order">
+                        <h2><b class="item">Transformation Resurfacing Treatment</b><span class="price">£115.00</span></h2>
+                    </article>
+                    <article class="order">
+                        <h2><b class="item">Defying Face Restoration</b><span class="price">£80.00</span></h2>
+                    </article>
+                    <article class="order">
+                        <h2><b class="item">Defying Transformation Facial</b><span class="price">£80.00</span></h2>
+                    </article>
+                </div>
+                <div id="BodyContent" class="menu-content">
+                    <article class="order">
+                        <h2><b class="item">Aqua Body Polish</b><span class="price">£85.00</span></h2>
+                    </article>
+                    <article class="order">
+                        <h2><b class="item">Bamboo Ginseng Hydration Wrap</b><span class="price">£100.00</span></h2>
+                    </article>
+                    <article class="order">
+                        <h2><b class="item">Coffee Almond Hydration Wrap</b><span class="price">£100.00</span></h2>
+                    </article>
+                    <article class="order">
+                        <h2><b class="item">Deep Detox Moroccan Ritual</b><span class="price">£120.00</span></h2>
+                   </article>
+                   <article class="order">
+                        <h2><b class="item">Palma Rosa & Jojoba Firming Lift</b><span class="price">£130.00</span></h2>
+                    </article>
+                    <article class="order">
+                        <h2><b class="item">Cardamon & Neroli Soul to Sole</b><span class="price">£155.00</span></h2>
+                    </article>
+                </div>
+                <div id="MassageContent" class="menu-content">
+                    <article class="order"></article>
+                        <h2><b class="item">Relaxtion</b><span class="price">£75.00</span></h2>
+                   </article>
+                    <article class="order">
+                        <h2><b class="item">Therapeutic</b><span class="price">£80.00</span></h2>
+                    </article>
+                    <article class="order">
+                        <h2><b class="item">Aromatherapy</b><span class="price">£75.00</span></h2>
+                    </article>
+                    <article class="order"></article>
+                        <h2><b class="item">Hot Bamboo Massage</b><span class="price">£175.00</span></h2>
+                    </article>
+                    <article class="order">
+                        <h2><b class="item">Hot stone </b><span class="price">£160.00</span></h2>
+                    </article>
+                    <article class="order">
+                        <h2><b class="item">Pre-Netal</b><span class="price">£170.00</span></h2>
+                    </article>
+                </div>
+            </div>      
+        </section>
+        
+        <section class="review">
+            <div class="sub-title">
+                Our Reviews
+            </div>
+            <div class="row2">
+                <div class="column2">
+                  <div class="card">
+                    <img src="/image/avatar.png" alt="Jane" class="avatar">
+                    <div class="container2">
+                      <h2>Jane Doe</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+
+                      <p class="title">Good Service</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem.
+                        Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum loremSome text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem.</p>
+                     
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="column2">
+                  <div class="card">
+                    <img src="/image/avatar2.png" alt="Mike" class="avatar">
+                    <div class="container2">
+                      <h2>Mike Ross</h2>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <p class="title">Will visit again</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem.
+                      Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum loremSome text that describes me lorem ipsum ipsum lorem.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="column2">
+                  <div class="card">
+                    <img src="/image/avatar3.png" alt="John" class="avatar">
+                    <div class="container2">
+                      <h2>Josh Smith</h2>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <p class="title">Great Experience</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem.</p>
+                      <p>Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem.Some text that describes me lorem ipsum ipsum lorem</p>
+                    </div>
+                  </div>
+                </div>
+            </div>      
+        </section>
+
+
+        <section class="six">
+            <!--seconed header pic-->
+        </section>
+
+        <section class="contact">
+            <div class="row">
+                <div class="left">
+                    <h3>Contact US</h3>
+                    <h3><a href="#">+45 4545 4545</a></h3>
+                    <a href="#" class="so social-facebook"></a>
+                    <a href="#" class="so social-instagram"></a>
+
+                </div>
+                <div class="right">
+                    <h2>FIND US</h2>
+                    <p>Vesterbrogade 41</p>
+                    <p>1620 København V</p>
+                    <img src="/image/hotel.jpg" style="width: 20%">
+                </div>
+            </div>  
+        </section>
+
+        <footer>
+            <p style="position: relative;
+            left: 50%;"> @Pigment hotel 2024 </p>
+        </footer>
+
+    </div>
+</body>
