@@ -127,7 +127,7 @@ section{
 }*/
 /*SECTION 1 PAGE*/
 .one{
-    background-image: url(relaximage/header.jpg);
+    background-image: url(header.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -408,7 +408,7 @@ img {
 
 /*section 6*/
 .six{
-    background-image: url(relaximage/footer.webp);
+    background-image: url(footer.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
