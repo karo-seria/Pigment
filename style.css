@@ -29,9 +29,9 @@ body {
     right: 20px;
   }
 .sleep:hover {
-  background-image: url(img/orange-bedroom3.jpg);
+  background-image: url(img/pink-bedroom31-long.jpg);
   background-size: cover;
-  background-position: 50%;
+  background-position: center;
 }
 .train {
     height: 45vh;
@@ -86,8 +86,9 @@ body {
     right: 10px;
   }
 .relax:hover {
-  background-image: url(home.jpg);
+  background-image: url(img/pink-pool.jpg);
   background-size: cover;
+  background-position: 50%;
   }
 .pigment {
     text-align: center;
@@ -144,7 +145,7 @@ footer a {
 
 @media screen and (min-width:576px) and (max-width: 992px) {
   .pigment h1 {
-    font-size: 10rem;
+    font-size: 23vw;
   }
 }
 
@@ -170,6 +171,6 @@ footer a {
         height: 25vh;
       }
     .pigment h1 {
-      font-size: 7rem;
+      font-size: 22vw;
     }
 }
