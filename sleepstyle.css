@@ -375,7 +375,7 @@ object-fit: cover;
 }
 
 .story h2 {
-  font-size: 5.5rem;
+  font-size: 15vw;
 }
 .story div:not(#photos, .dessert) {
 padding-left: 10px;
