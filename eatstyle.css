@@ -107,6 +107,7 @@ body {
 .header {
 position: relative;
 top: -50px;
+/* margin-bottom: -50px; */
 }
 .header img {
   left: 0;
@@ -142,6 +143,17 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 z-index: 100;
+}
+.credit {
+  position: relative;
+  top: -50px;
+  margin-bottom: -50px;
+  color:#E8B8CE;
+  font-family: 'raleway', sans-serif;
+  font-size: 13px;
+  text-decoration: none;
+  float: right !important;
+  right: 8%;
 }
 
 /* BOOK LINK CIRCLE */
@@ -325,7 +337,6 @@ padding-bottom: 3rem;
 }
 
 footer {
-  /* height: 530px; */
   background-color: #E8B8CE;
   font-family: 'Raleway', sans-serif;
   color:#090081;
