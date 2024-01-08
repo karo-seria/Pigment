@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -176,6 +176,7 @@ section{
     left: -2%;
     position: relative;
     font-size: 25px;
+     font-family: 'Raleway', sans-serif;
 }
 
 /*SECTION 3 - GALLERY*/
