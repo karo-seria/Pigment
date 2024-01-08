@@ -196,6 +196,24 @@ footer {
   margin: 0;
 }
 
+.btn {
+  background-color: #795CA8;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.btn:hover {
+  background-color: #cfb9f1;
+}
+
 footer h2 {
   font-size: 20px;
   margin-top: 50px;
