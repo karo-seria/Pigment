@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +10,7 @@
     /*font-family: "Great Vibes", sans-serif;*/
     
 }
+
 
 .container {
     font-family: 'Raleway', sans-serif;
@@ -137,7 +141,7 @@ section{
 }
 .background-text{
     position: relative;
-    font-size: 90px;
+    font-size: 100px;
     top: 50%;
     font-family: "Great Vibes",sans-serif;
 }
@@ -149,7 +153,7 @@ section{
     transform: translate(-50%, -50%);
     font-family: "Great Vibes",sans-serif;
     color: #ff0000;
-    font-size: 100px;
+    font-size: 130px;
 }
 
 .sub-title{
@@ -181,7 +185,7 @@ section{
 
 /*SECTION 3 - GALLERY*/
 .gallery{
-    background-color: white ;
+    background-color:rgb(247, 189, 181) ;
     display: flex;  
     justify-content: center;
     align-items: center;
@@ -308,7 +312,7 @@ img {
 }
 
 #mysidemenu a:hover{
-    left: 0;
+    left: 0%;
     background-color: #555;
 }
 .menu-content p {
@@ -321,11 +325,11 @@ img {
 
 .menu-content {
     position: relative;
-    left: 2%;
+    left: -3%;
     background-color: white;
-    padding: 130px;
+    padding: 155px;
     border-radius: 20px;
-    top: 1%;
+    top: 3%;
 }
 
 .menu-content h2 {
@@ -337,6 +341,7 @@ img {
     color: red;
     margin-right: -15%;
 }
+
 #FaceConent{
     display: block;
 }
@@ -431,6 +436,12 @@ img {
     justify-content: center;
     text-align: center;
 }
+
+.contact .row{
+    display: flex;
+    justify-content: space-around;
+}
+
 .contact h2{
     margin-top: 15px;
     font-family: 'Raleway', sans-serif;
@@ -439,15 +450,11 @@ img {
 .contact h3{
     font-family: 'Raleway', sans-serif;;
 }
-.contact .row{
-    display: flex;
-    justify-content: space-around;
-}
-
 .contact .left{
    flex: 1;
    padding: 20px;
    margin-top: 0;
+   left: 50%;
 
 }
 
@@ -457,6 +464,8 @@ img {
     margin-top: 0;
     text-align: center;
 }
+
+
 .bi {
     position: relative;
     padding: 20px;
@@ -471,20 +480,95 @@ img {
       opacity: 0.7;
 }
 .bi-facebook {
-    background: #3B5998;
-    color: white;
+    position: relative;
+    color: black;
 }
   
 
 .bi-instagram {
-    background: #125688;
-    color: white;
+    position: relative;
+    color: black;
 }
-
+/*FOOTER SECTION*/
 footer{
+
     
     height: 3vh;
     display: flex;
     background-color: rgb(132, 47, 185);
     color: white;
 }
+
+/* BOOK LINK CIRCLE */
+
+:root {
+	--radius: 60px;
+	--frame-size: calc(var(--radius) / 3);
+	--d-outer: calc(var(--radius) * 2);
+	--d-inner: calc(var(--d-outer) - var(--frame-size));
+}
+
+.circle {
+	position: fixed;
+	width: var(--d-outer);
+	height: var(--d-outer);
+	border-radius: 50%;
+	display:flex;
+   
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    top: 50%;
+    right: 80px;    
+	transform: translateY(-50%);
+    z-index: 205;
+   
+  /* mix-blend-mode:difference; */
+}
+
+.circle a {
+  color: #DEDE00;
+}
+
+.book {
+	position: relative;
+	height: var(--d-outer);
+	width: var(--d-outer);
+    top: 50%;
+	left: 50%;
+    transform: translateY(4%);
+	text-align: center;
+	text-decoration: none;
+    font-weight: bold;
+}
+
+.text {
+	position:relative;
+	width: 100%;
+	height: 100%;
+	animation: rotateText 20s linear infinite;
+    letter-spacing: 1rem;
+}
+
+@keyframes rotateText {
+	0% {
+	transform: rotate(0deg);
+	}
+	100% {
+	transform: rotate(360deg);
+	}
+}
+.text p span {
+	position: absolute;
+	left: 50%;
+	font-size: 0.7rem;
+    letter-spacing: 1rem;
+	transform-origin: 0 var(--radius);
+    animation: rotateText 20s linear infinite;
+}
+
+.circle:hover .text {
+	scale: 1.1;
+}
+
+/* BOOK LINK CIRCLE END */
