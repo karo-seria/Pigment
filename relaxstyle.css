@@ -315,18 +315,17 @@ img {
     margin: 0;
 }
 .content-container {
-    margin-left: 120px; /* Adjust this margin to match the width of your side menu */
-    padding: 20px;
+    margin-left: 5px; /* Adjust this margin to match the width of your side menu */
+    padding: 100px;
 }
 
 .menu-content {
     position: relative;
-    left: 50%;
-    display: none;
+    left: 20%;
     background-color: white;
     padding: 20px;
-    border-radius: 10px;
-    top: 30%;
+    border-radius: 20px;
+    top: 5%;
 }
 
 .menu-content h2 {
@@ -336,6 +335,14 @@ img {
 .price{
     float: right;
     color: red;
+    margin-right: -15%;
+}
+#FaceConent{
+    display: block;
+}
+
+#BodyContent, #MassageContent{
+    display: none;
 }
 
 #face{
