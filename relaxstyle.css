@@ -296,9 +296,9 @@ img {
 #mysidemenu a {
     position: relative;
     left: -155px;
-    transition: 0.3s;
+    transition: 1s;
     padding: 15px;
-    width: 100px;
+    width: 150px;
     text-decoration: none;
     font-size: 20px;
     color: white;
