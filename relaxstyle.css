@@ -185,7 +185,7 @@ section{
 
 /*SECTION 3 - GALLERY*/
 .gallery{
-    background-color:rgb(247, 189, 181) ;
+    background-color:white;
     display: flex;  
     justify-content: center;
     align-items: center;
@@ -196,7 +196,7 @@ section{
     position: relative;
     max-width: 80%;
     text-align: center;
-    left: -5%;
+    left: 0%;
 }
 
 /* Hides the images by default */
