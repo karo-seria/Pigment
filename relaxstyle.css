@@ -176,7 +176,7 @@ section{
     left: -2%;
     position: relative;
     font-size: 25px;
-     font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 /*SECTION 3 - GALLERY*/
@@ -419,8 +419,19 @@ img {
 /*contact page*/
 .contact{
     background-color:rgb(232, 184, 206);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.contact h2{
+    margin-top: 15px;
+    font-family: 'Raleway', sans-serif;
 }
 
+.contact h3{
+    font-family: 'Raleway', sans-serif;;
+}
 .contact .row{
     display: flex;
     justify-content: space-around;
