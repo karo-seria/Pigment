@@ -181,7 +181,7 @@ section{
 
 /*SECTION 3 - GALLERY*/
 .gallery{
-    background-color: white;
+    background-color:rgb(247, 189, 181) ;
     display: flex;  
     justify-content: center;
     align-items: center;
