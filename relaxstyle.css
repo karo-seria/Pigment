@@ -356,9 +356,9 @@ img {
 *:before, *:after {
     box-sizing: inherit;
 }
-/*.review{
-    
-}*/
+.review{
+    background-color:rgb(247, 189, 181) ;
+}
 .avatar{
     vertical-align:middle;  
     width: 100px;
