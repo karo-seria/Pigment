@@ -7,7 +7,7 @@ function myFunction(imgs) {
 }
 
 
-//SECTION 4 -GALLERY //
+//SECTION 3 -GALLERY //
 
 
 function showContent(contentId) {
