@@ -130,6 +130,40 @@
     white-space: nowrap;
     z-index: 99;
 }
+/* BOOK LINK CIRCLE */
+.circle {
+	position: fixed;
+	width: var(--d-outer);
+	height: var(--d-outer);
+	border-radius: 50%;
+	display:flex;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    top: 50%;
+    right: 80px;    
+	transform: translateY(-50%);
+    z-index: 205;
+  /* mix-blend-mode:difference; */
+}
+
+.circle a {
+  color: red;
+}
+
+.book {
+	position: relative;
+	height: var(--d-outer);
+	width: var(--d-outer);
+    top: 50%;
+	left: 50%;
+    transform: translateY(4%);
+	text-align: center;
+	text-decoration: none;
+    font-weight: bold;
+}
+/* BOOK LINK CIRCLE END */
+
 .travelawards img {
     height: 17%;
     width: auto;
@@ -181,7 +215,7 @@ section{
     transform: translate(-50%, -50%);
     font-family: "Great Vibes",sans-serif;
     color: #ff0000;
-    font-size: 130px;
+    font-size: 200px;
 }
 
 .sub-title{
