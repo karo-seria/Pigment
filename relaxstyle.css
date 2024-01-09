@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+
 @import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
 
 *{
@@ -21,7 +24,7 @@
     position: sticky;
     z-index: 200;
     
-  }
+}
   
 .nav {
     display: flex;
@@ -107,12 +110,13 @@
       font-size: 1rem;
       letter-spacing: 0.1rem;
       font-weight: 400;
-      color:#e9d2dd;
+      color:red;
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -55%);
 }
+
 .headerph {
     font-family: 'Passions Conflict', cursive;
     /* font-weight: lighter; */
@@ -143,7 +147,7 @@ section{
 }*/
 /*SECTION 1 PAGE*/
 .one{
-    background-image: url(header.jpg);
+    background-image: url(/relaximage/header.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -197,7 +201,7 @@ section{
 
 /*SECTION 3 - GALLERY*/
 .gallery{
-    background-color:white;
+    background-color:white ;
     display: flex;  
     justify-content: center;
     align-items: center;
@@ -433,7 +437,7 @@ img {
 
 /*section 6*/
 .six{
-    background-image: url(footer.webp);
+    background-image: url(/relaximage/footer.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -491,11 +495,6 @@ footer a {
 }
 
 .red{
-    background-color:  #ff6c85;
+    background-color: red;
     padding: 5px;
 }
-
-
-
-
-
