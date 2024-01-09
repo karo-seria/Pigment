@@ -321,11 +321,11 @@ img {
 
 .menu-content {
     position: relative;
-    left: 20%;
+    left: -3%;
     background-color: white;
-    padding: 200px;
+    padding: 155px;
     border-radius: 20px;
-    top: 5%;
+    top: 3%;
 }
 
 .menu-content h2 {
