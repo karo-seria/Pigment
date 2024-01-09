@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
 
 *{
     margin: 0;
@@ -113,6 +112,19 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -55%);
+}
+.headerph {
+    font-family: 'Passions Conflict', cursive;
+    /* font-weight: lighter; */
+    font-size: 4rem;
+    font-weight:400;
+    color:#090081;
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 99;
 }
   
 
@@ -428,147 +440,62 @@ img {
     justify-content: center;
 
 }
-/*contact page*/
-.contact{
-    background-color:rgb(232, 184, 206);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.contact .row{
-    display: flex;
-    justify-content: space-around;
-}
-
-.contact h2{
-    margin-top: 15px;
+/*contact page -- FOOTER*/
+footer {
+    /* height: 530px; */
+    background-color: #E8B8CE;
     font-family: 'Raleway', sans-serif;
+    color:#090081;
+    padding: 0;
+    margin: 0;
+    margin-top: -5%;
 }
-
-.contact h3{
-    font-family: 'Raleway', sans-serif;;
-}
-.contact .left{
-   flex: 1;
-   padding: 20px;
-   margin-top: 0;
-   left: 50%;
-
-}
-
-.contact .right{
-    flex: 1;
-    padding: 20px;
-    margin-top: 0;
+footer h2 {
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 40px;
     text-align: center;
-}
-
-
-.bi {
-    position: relative;
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-  }
-  
-.bi:hover {
-      opacity: 0.7;
-}
-.bi-facebook {
-    position: relative;
-    color: black;
-}
-  
-
-.bi-instagram {
-    position: relative;
-    color: black;
-}
-/*FOOTER SECTION*/
-footer{
-
     
-    height: 3vh;
+}
+  
+footer h3 {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+footer a {
+    color: #090081;
+}
+.hotelimage {
+    /* width: 25vw; */
+    width: 250px;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+.row row-cols-1 row-cols-sm-2{
     display: flex;
-    background-color: rgb(132, 47, 185);
-    color: white;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* BOOK LINK CIRCLE */
+.contact{
+    float: left;
+    margin-left: 20%;
 
-:root {
-	--radius: 60px;
-	--frame-size: calc(var(--radius) / 3);
-	--d-outer: calc(var(--radius) * 2);
-	--d-inner: calc(var(--d-outer) - var(--frame-size));
 }
 
-.circle {
-	position: fixed;
-	width: var(--d-outer);
-	height: var(--d-outer);
-	border-radius: 50%;
-	display:flex;
-   
-    font-family: 'Raleway', sans-serif;
-    font-size: 1rem;
-    text-transform: uppercase;
-    top: 50%;
-    right: 80px;    
-	transform: translateY(-50%);
-    z-index: 205;
-   
-  /* mix-blend-mode:difference; */
+.findus{
+    float: right;
+    margin-right: 18%;
 }
 
-.circle a {
-  color: #DEDE00;
+.red{
+    background-color:  #ff6c85;
+    padding: 5px;
 }
 
-.book {
-	position: relative;
-	height: var(--d-outer);
-	width: var(--d-outer);
-    top: 50%;
-	left: 50%;
-    transform: translateY(4%);
-	text-align: center;
-	text-decoration: none;
-    font-weight: bold;
-}
 
-.text {
-	position:relative;
-	width: 100%;
-	height: 100%;
-	animation: rotateText 20s linear infinite;
-    letter-spacing: 1rem;
-}
 
-@keyframes rotateText {
-	0% {
-	transform: rotate(0deg);
-	}
-	100% {
-	transform: rotate(360deg);
-	}
-}
-.text p span {
-	position: absolute;
-	left: 50%;
-	font-size: 0.7rem;
-    letter-spacing: 1rem;
-	transform-origin: 0 var(--radius);
-    animation: rotateText 20s linear infinite;
-}
 
-.circle:hover .text {
-	scale: 1.1;
-}
 
-/* BOOK LINK CIRCLE END */
