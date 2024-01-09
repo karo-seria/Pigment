@@ -130,6 +130,18 @@
     white-space: nowrap;
     z-index: 99;
 }
+.travelawards img {
+    height: 17%;
+    width: auto;
+    position: fixed;
+    top: 90%;
+    left: 10px;    
+      transform: translateY(-50%);
+    padding: 0;
+    /* transform: translate(-50%, -50%); */
+    /* float: right; */
+    z-index: 204;
+  }
   
 
 section{
